@@ -1,0 +1,27 @@
+import pandas as pd
+import numpy as np
+import csv
+import matplotlib.pyplot as plt
+
+data=pd.read_csv('startup_funding.csv')
+df=data.copy()
+#for x in df.StartupName.unique(): #checking for wrong name entries for big startups
+    #if 'OYO' in x:
+        #print(x)
+df["StartupName"].replace("Ola Cabs","Ola", inplace=True)
+df["StartupName"].replace("Olacabs","Ola", inplace=True)
+df["StartupName"].replace("Flipkart.com","Flipkart", inplace=True)
+df["StartupName"].replace("OyoRooms","Oyo", inplace=True)
+df["StartupName"].replace("Oyo Rooms","Oyo", inplace=True)
+df["StartupName"].replace("Oyorooms","Oyo", inplace=True)
+df["StartupName"].replace("OYO Rooms","Oyo", inplace=True)
+df["StartupName"].replace("Paytm Marketplace","Paytm",inplace=True)
+
+
+ans_n=df["StartupName"].value_counts().index    #ans_n=answer name
+ans_a=df["StartupName"].value_counts().values
+
+for i in range(0,5):
+    print(ans_n[i]," ",ans_a[i])
+
+

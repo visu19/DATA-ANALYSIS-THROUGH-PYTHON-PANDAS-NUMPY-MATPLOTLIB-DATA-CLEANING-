@@ -1,0 +1,17 @@
+The ‘dataset on the modern Olympic Games’ comprises all the Games from Athens
+1986 to Rio 2016. The Olympics is more than just a quadrennial multi-sport
+world championship. It is a lens through which to understand global history,
+including shifting geopolitical power dynamics, women’s empowerment, and the
+evolving values of society.
+
+In this analysis, our goal is to shed light on major patterns in Olympic history.
+How many athletes, sports, and nations are there? Where do most athletes
+come from? Who wins medals? What are the characteristic of the athletes (e.g.,
+gender and physical size)?
+
+Olympics data contains 271,116 rows and 17 columns with details of athletes,
+events and medals won.
+
+We are going to explore the Modern Olympic dataset. The
+exercise mainly focuses on the analytics part, visualizing, trying to find out the
+most dominating countries for the past 120 yrs, etc.
